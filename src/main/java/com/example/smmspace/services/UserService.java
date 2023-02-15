@@ -13,4 +13,6 @@ public interface UserService {
     public User getUserByPrincipal(Principal principal);
     public boolean activateUser(String code);
     public void createDescription(long id,String description);
+    public void emailSendForgot(String email);
+    public void resetPass(String code,String pass1,String pass2);
 }

@@ -53,8 +53,34 @@ public class UserController {
         }
         return "redirect:/activate";
     }
-    /* */
+    /* Recover Pass*/
+        @GetMapping("/recover")
+        public String emailSendForgot(Principal principal,Model model) {
+            model.addAttribute("user", userServiceImpl.getUserByPrincipal(principal));
+            return "recover";
+        }
 
+
+        @PostMapping("/recover")
+        public String resetPass(@RequestParam String email) {
+            userServiceImpl.emailSendForgot(email);
+
+            return "redirect:/new-password";
+    }
+
+    /* New Pass*/
+    @GetMapping("/new-password")
+    public String resetPass(Principal principal,Model model) {
+        model.addAttribute("user", userServiceImpl.getUserByPrincipal(principal));
+        return "new-password";
+    }
+
+
+    @PostMapping("/new-password")
+    public String emailSend(@RequestParam String code,@RequestParam String pass1, @RequestParam String pass2) {
+        userServiceImpl.resetPass(code,pass1,pass2);
+        return "redirect:/login";
+    }
 
     /* */
 

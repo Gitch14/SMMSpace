@@ -126,4 +126,34 @@ public class UserServiceImpl implements UserService {
         user.setDescription(description);
         userRepository.save(user);
     }
+
+    @Override
+    public void emailSendForgot(String email) {
+        User user = userRepository.findByEmail(email);
+        if (user == null){
+            return;
+        }
+        String newCode = UUID.randomUUID().toString();
+        String message =String.format(
+                "Hello, %s \n" + "Your code for reset password\n %s",
+                user.getUsername(),newCode
+        );
+        user.setForgotCode(newCode);
+        userRepository.save(user);
+        mailSenderService.sendSimpleMessage(user.getEmail(), "Code",message);
+    }
+
+    @Override
+    public void resetPass(String code, String pass1, String pass2) {
+        User user = userRepository.findByForgotCode(code);
+        if (user == null){
+            return;
+        }
+        if (!Objects.equals(pass1, pass2)){
+            return;
+        }
+
+        user.setPassword(passwordEncoder.encode(pass1));
+        userRepository.save(user);
+    }
 }

@@ -22,6 +22,7 @@
         <button type="submit" style="width: 100%" class="btn btn-dark">Sing in</button>
     </form>
     <h2>New to SMMSpace? <a href="/registration">Register!</a></h2>
+            <h2>Forgot your password?</h2> <a href="/recover">Reset password!</a>
     </div>
     </img>
 </@t.template>
