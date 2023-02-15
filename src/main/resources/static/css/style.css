@@ -1,0 +1,289 @@
+.post:hover {
+    transition: 0.5s;
+    transform: scale(1.02);
+}
+
+.post-link {
+    color: #000 !important;
+    text-decoration: none
+}
+body {
+    display: block;
+    width: 100%;
+    background: url("https://i.ibb.co/XLNTLX1/Main-Page-Cabinet.png") no-repeat center center fixed!important;
+    background-size: cover;
+    justify-content: center;
+}
+
+.card-img-top {
+    margin-top: 15px;
+    margin-left: 59px;
+    width: 180px!important;
+    height: 180px!important;
+}
+
+.btn-btn-light-my-2-my-sm-0 {
+    box-sizing: border-box;
+    position: relative;
+    top: -2px;
+
+
+    width: 94px;
+    height: 40px;
+    background-color: #200f22;
+    color: #f6f4e6;
+
+    border: 1px solid #C584F5;
+    border-radius: 6px;
+}
+
+.form-row{
+    position: absolute;
+    left: 150px;
+    top: 10px;
+}
+
+.form-control1 {
+    position: relative;
+    left: 200px;
+    top: 25px;
+    width: 285px;
+    height: 25px;
+    background: #D9D9D9!important;
+    border-radius: 50px!important;
+    border: none;
+}
+
+.btn1 {
+    background-color: #D9D9D9!important;
+    position: relative;
+    left: 200px;
+    top: 27px;
+    width: 20px;
+    height: 18px;
+    background-image: url(https://i.ibb.co/tXqwPsH/free-icon-magnifying-4485943-1.png);
+    border: none!important;
+
+}
+
+/*  Header */
+.navbar-brand-mb-0-h1{
+    font-family: 'Manrope', sans-serif;
+    font-style: normal;
+    font-weight: 800;
+    font-size: 25px;
+    line-height: 75px;
+    /* identical to box height, or 300% */
+
+    letter-spacing: -0.04em;
+    text-transform: capitalize;
+
+    background: linear-gradient(89.97deg, #AE67FA 1.84%, #F49867 102.67%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    text-fill-color: transparent;
+}
+
+#small-menu{
+display: flex;
+position: relative;
+top: 5px;
+left: 75%;
+}
+
+li{
+list-style-type: none;
+margin-right: 40px;
+}
+
+li a {
+color: #f6f4e6;
+text-decoration: none!important;
+border: none !important;
+font-size: 1.2em;
+list-style-type: none;
+font-weight: 500;
+display: inline-block;
+
+}
+
+/* Footer */
+
+.container.mt-4{
+    margin-bottom: 300px!important;
+}
+
+footer {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    text-align: center;
+    justify-content: center;
+    width: 100%;
+    height: 133px;
+    margin-top: 300px!important;
+    z-index: 999!important;
+
+    background: #1C1C1E;
+    border-top-left-radius: 40px 40px;
+    border-top-right-radius: 40px 40px;
+}
+
+
+.social {
+    position: relative;
+    top: 15px;
+}
+
+.social img{
+    padding-left: 100px;
+}
+
+/* Carts */
+
+.card.my-3.post{
+    max-width: 300px;
+    height: 430px;
+    margin: 0px 50px 0 10px;
+    background: linear-gradient(191.32deg, #7B2EB0 -118.59%, #C584F5 15.64%, #DACEE1 56.18%, #5D6AAA 81.36%, #0D2986 109.76%, #481CBB 131.68%, #142D8E 131.68%)!important;
+    border-radius: 41.5692px;
+    border: solid 1px;
+}
+
+.card {
+    word-wrap: inherit!important;
+
+}
+
+.img {
+    position: relative;
+    left: 59px;
+    top: 15px;
+    width: 180px;
+    height: 180px;
+    margin: auto;
+}
+
+/* bg */
+
+.bg{
+    z-index: 1;
+    border-radius: 50px;
+    border: none;
+    display: block;
+    width: 100%;
+    background-size: cover;
+    justify-content: center;
+}
+
+.content-center {
+    z-index: 90;
+    position: relative;
+
+    width: 50%;
+    margin: auto;
+}
+
+.form-control {
+    width: 50%;
+}
+/* BTN */
+
+
+.button.btn.btn-danger.mb-2{
+    width: 50%!important;
+    text-align: center;
+}
+.a.btn.btn-dark.mb-3{
+
+    text-align: center;
+}
+
+.profile-btn {
+    position: relative;
+    width: 30%;
+    top: -455px;
+    left: 150px;
+}
+
+.btn-dark {
+    margin-top: 12px;
+}
+
+
+/* about */
+
+.container d-flex align-items-center justify-content-center {
+    position: relative;
+    left: 200px;
+}
+
+.TheShort{
+
+    width: 300px;
+    height: 100%;
+
+
+    font-family: 'Manrope';
+    font-style: normal;
+    font-weight: 800;
+    font-size: 25px;
+    line-height: 34px;
+
+    color: #FFFFFF;
+}
+
+.TheLong{
+
+    width: 850px;
+    height: 100%;
+    margin-left: 15%;
+
+
+    font-family: 'Manrope';
+    font-style: normal;
+    font-weight: 800;
+    font-size: 25px;
+    line-height: 34px;
+
+    color: #FFFFFF;
+
+}
+
+/* Slide */
+
+svg.bd-placeholder-img{
+    height: 650px;
+}
+
+img.post{
+    height: 500px!important;
+    width: 100%;
+}
+
+.create-h1 {
+    position: relative;
+    margin-bottom: 50px;
+}
+
+/* Profile */
+.profile-marker{
+    margin-top: 100px;
+    text-align: left;
+}
+/* Fonts */
+.card-columns{
+    width: 100%!important;
+}
+
+.card-columns {
+    display: contents;
+}
+
+h1,p,label,h2,h4 {
+    color: #f6f4e6;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Cousine&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@300&display=swap');
