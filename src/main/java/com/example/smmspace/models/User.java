@@ -23,6 +23,7 @@ public class User implements UserDetails {
     private Image avatar;
     private boolean active;
     private String activationCode;
+    private String forgotCode = null;
     @Column(length = 1000)
     private String password;
 
@@ -107,6 +108,14 @@ public class User implements UserDetails {
 
     public void setActivationCode(String activationCode) {
         this.activationCode = activationCode;
+    }
+
+    public String getForgotCode() {
+        return forgotCode;
+    }
+
+    public void setForgotCode(String forgotCode) {
+        this.forgotCode = forgotCode;
     }
 
     public void setPassword(String password) {
